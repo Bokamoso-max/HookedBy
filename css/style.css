@@ -1,9 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #8B0000;
-    --secondary: #555555;
-    --light: #F1F3FA;
-    --dark: #1C2035;
+    --primary: #EB8888;
+    --secondary:#954D4A;
+    --light:#FAF1E6;
+    --dark: #521015;
+}
+.bg-primary {
+    background-color: var(--primary) !important;
 }
 
 .back-to-top {
@@ -40,7 +43,9 @@
     font-weight: 500;
 }
 
-.btn-primary,
+.btn-primary {
+    background-color: var(--primary);
+}
 .btn-outline-primary:hover {
     color: var(--light);
 }
