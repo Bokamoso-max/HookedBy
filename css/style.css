@@ -87,6 +87,11 @@
     transition: .5s;
 }
 
+.logo {
+    border-radius: 5em;
+    
+}
+
 .navbar .navbar-nav .nav-link {
     margin-right: 35px;
     padding: 25px 0;
@@ -320,9 +325,9 @@
 /*** Project ***/
 .project-item {
     position: relative;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    box-shadow: 20px 20px 20px #521015;
 }
 
 
