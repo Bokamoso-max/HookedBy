@@ -433,3 +433,98 @@
 .copyright a:hover {
     color: var(--primary) !important;
 }
+
+/*** Canva Portfolio ***/
+
+.canva-item {
+    background: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+    transition: .5s;
+    height: 100%;
+}
+
+.canva-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 20px 20px 20px rgba(82, 16, 21, .25);
+}
+
+.canva-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.canva-image img {
+    height: 300px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.canva-item:hover .canva-image img {
+    transform: scale(1.05);
+}
+
+.canva-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(82, 16, 21, .65);
+    opacity: 0;
+    transition: .5s;
+}
+
+.canva-item:hover .canva-overlay {
+    opacity: 1;
+}
+
+.canva-overlay .btn {
+    background-color: var(--primary);
+    color: #FFFFFF;
+    border: none;
+}
+
+.canva-overlay .btn:hover {
+    background-color: var(--dark);
+}
+
+.canva-text {
+    padding: 25px;
+    text-align: center;
+}
+
+.canva-text h5 {
+    color: var(--dark);
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.canva-item:hover .canva-text h5 {
+    color: var(--primary);
+}
+
+.canva-text p {
+    color: #777777;
+    margin-bottom: 0;
+}
+
+
+/*** Mobile Canva Portfolio ***/
+
+@media (max-width: 768px) {
+
+    .canva-image img {
+        height: 250px;
+    }
+
+    .canva-overlay {
+        opacity: 1;
+        background: rgba(82, 16, 21, .25);
+    }
+
+    .canva-overlay .btn {
+        padding: 8px 18px;
+    }
+}
